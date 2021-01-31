@@ -28,7 +28,7 @@ node {
 
         stage('backend tests') {
             try {
-                sh "./mvnw -ntp verify -P-webpack"
+                sh "./mvnw -ntp verify -P-webpack -DskipTests"
             } catch(err) {
                 throw err
             } finally {
