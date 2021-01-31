@@ -38,8 +38,8 @@ node {
 
         stage('frontend tests') {
             try {
-               npm install
-               npm test
+               sh "npm install"
+               sh "npm test"
             } catch(err) {
                 throw err
             } finally {
