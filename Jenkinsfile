@@ -32,7 +32,7 @@ node {
             } catch(err) {
                 throw err
             } finally {
-                junit allowEmptyResults: true , '**/target/test-results/**/TEST-*.xml'
+                junit allowEmptyResults: true, testResults: '**/test-results/*.xml'
             }
         }
 
